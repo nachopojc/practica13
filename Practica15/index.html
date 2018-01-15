@@ -25,14 +25,15 @@
     <script type="text/javascript" src="canvas.js"></script>
 </canvas>
 <h1>video en varios formatos y con subtitulos </h1>
-<video controls="controls">
-        <souce src="saas.webm" type="video/webm" poster="poster.jpg"></souce>
-        <souce src="saas.ogv" type="video/ogv" poster="poster.jpg"></souce>
+<video controls  poster="poster.jpg">
+        <source src="saas.webm" type="video/webm">
+        <source src="saas.ogv" type="video/ogg">
+        <source src="saas.ogv" type="video/mp4">
         <track src="saas-en.vtt" kind="subtitles" srclang="en" label="Ingles">
         <track src="saas-es.vtt" kind="subtitles" srclang="es" label="Español">
 </video>
 <h1>Audio (suena automáticamente en segundo plano)</h1>
-<audio controls="controls" autoplay>
+<audio controls autoplay>
     <source src="cancion.mp2" type="audio/mp2">
     <source src="cancion.aiff" type="audio/aiff">
     <source src="cancion.mp3" type="audio/mp3">
