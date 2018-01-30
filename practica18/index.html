@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>practica18</title>
+</head>
+<body>
+<form action="http://jorgesanchez.net/servicios/ver-datos.php" method="post">
+    <table border="1">
+        <tr>
+            <td colspan="4"><h1>Formulario de Alta</h1></td>
+        </tr>
+        <tr>
+            <td>
+                Usuario<br>
+                Contaseña<br>
+                Confirme la contraseña
+            </td>
+            <td>
+                <input type="text" name="Usuario" id="idusuario"><br>
+                <input type="password" name="contraseña" id="idcontraseña"><br>
+                <input type="text" name="confima" id="idconfirma">
+            </td>
+            <td colspan="2" rowspan="3">
+                <picture>
+                    <img src="imagen/mundo.jpg" height="300" width="400"/>
+                </picture>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                email<br>
+                telefono<br>
+                fecha de nacimiento
+            </td>
+            <td>
+                <input type="email" name="email" id="idemail"><br>
+                <input type="tel" name="telefono" id="idtelefono"><br>
+                <input type="date" name="nacimiento" id="idnacimiento">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>intereses</legend>
+                        <input type="checkbox" name="deportes"value="deportes">Deportes
+                        <input type="checkbox" name="cine" value="cine">Cine
+                        <input type="checkbox" name="teatro" value="teatro">Teatro
+                        <input type="checkbox" name="musica" value="musica">Música
+                        <input type="checkbox" name="viajes" value="viajes">Viajes
+                        <input type="checkbox" name="otras" value="otras">Otras
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">sexo:
+                <input type="radio" name="sexo" id="hombre">
+                <label for="hombre">hombre</label>
+                <input type="radio" name="sexo" id="mujer">
+                <label for="mujer">mujer</label>
+            </td>
+            <td colspan="2">¿Como conociste a MundoOcio.com?<br>
+                <select name=”provincia”>
+                    <optgroup label="recomendacion">
+                    <option value=”amigos”>amigos</option>
+                    <option value=”familiares”>familiares</option>
+                    <option value=”otros”>otros</option>
+                    </optgroup>
+                    <optgroup label="Medios">
+                    <option value=”internet”>internet</option>
+                    <option value=”TV”>TV</option>
+                    <option value=”prensa”>prensa</option>
+                    <option value=”Radio”>Radio</option>
+                    <option value=”otros”>otros</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"> Escribe ahora los comentarios que estimes oportunos<br>
+                <textarea name="comentarios" cols="80" row="1"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button type="button">Enviar</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<h1>Ir a otras zonas de MundoOcio.com</h1>
+</body>
+</html>
